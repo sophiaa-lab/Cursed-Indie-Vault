@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursed Indie Vault — Exploração Arquivística de Obras Independentes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+<link rel="shortcut icon" href="Logo-1.ico" type="image/x-icon">
+  <link rel="stylesheet" href="Css/style.css" />
+</head>
+<body>
+
+  <header class="topo">
+    <div class="topo-conteudo">
+      <a class="logo-area" id="voltarInicio" title="Voltar ao início">
+        <img src="Imagens/Logo 1.png" alt="Cursed Indie Vault" class="logo-pequena" />
+        <span class="nome-site">Cursed Indie Vault</span>
+      </a>
+
+      <div class="caixa-busca">
+        <span class="icone-lupa"></span>
+        <input
+          type="text"
+          id="campoBusca"
+          class="input-busca"
+          placeholder="Buscar título, dev ou tag..."
+        />
+        <button type="button" id="limparBusca" class="btn-limpar" title="Limpar">×</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="banner">
+      <div class="banner-texto">
+        <h1 class="titulo-banner">Exploração Arquivística de Obras Independentes</h1>
+        <p class="descricao-banner">
+          O Cursed Indie Vault é um repositório acadêmico-cultural focado em preservar a memória de jogos independentes que
+           revolucionaram a narrativa sombria, o terror analógico, o mascot horror e o design conceitual contemporâneo.
+        </p>
+      </div>
+
+      <div class="banner-imagem">
+        <img src="Imagens/Logo 2.png" alt="Emblema Cursed Indie Vault" class="logo-grande" />
+      </div>
+    </section>
+
+    <section class="secao-categorias">
+      <span class="titulo-categorias">CATEGORIAS DO ARQUIVO</span>
+      <div class="lista-categorias">
+        <button type="button" class="btn-categoria ativo" data-categoria="todos">
+          <span class="texto-categoria">Todos os títulos</span>
+          <span class="contador" id="cont-todos">44</span>
+        </button>
+        <button type="button" class="btn-categoria" data-categoria="Point & Click">
+          <span class="texto-categoria">Point &amp; Click</span>
+          <span class="contador" id="cont-point">11</span>
+        </button>
+        <button type="button" class="btn-categoria" data-categoria="Terror Analógico">
+          <span class="texto-categoria">Terror Analógico</span>
+          <span class="contador" id="cont-terror">11</span>
+        </button>
+        <button type="button" class="btn-categoria" data-categoria="Mascot Horror & Sobrevivência">
+          <span class="texto-categoria">Mascot Horror...</span>
+          <span class="contador" id="cont-mascot">11</span>
+        </button>
+        <button type="button" class="btn-categoria" data-categoria="Fantasia & Aventura">
+          <span class="texto-categoria">Fantasia &amp; Aventura</span>
+          <span class="contador" id="cont-fantasia">11</span>
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <div class="grade-jogos" id="gradeJogos"></div>
+
+      <div class="sem-resultados" id="semResultados">
+        <h3>Nenhum registro encontrado no arquivo</h3>
+        <p>Não encontramos obras correspondentes aos critérios de pesquisa ou filtro selecionados.</p>
+        <button type="button" class="btn-resetar" id="btnResetar">Restaurar visualização completa</button>
+      </div>
+    </section>
+
+    <div class="area-ver-mais">
+      <button type="button" class="btn-ver-mais" id="btnVerMais">
+        Explorar arquivo <span>→</span>
+      </button>
+    </div>
+
+  </main>
+
+  <footer class="rodape">
+    <p class="rodape-titulo">Cursed Indie Vault (CIV)</p>
+    <p class="rodape-sub">Projeto de Curadoria &amp; Documentação do Universo dos Jogos Indies.</p>
+    <p class="rodape-nota">Desenvolvido com foco em preservação estética, tipografia editorial e responsividade.</p>
+  </footer>
+
+  <div class="fundo-modal" id="janelaJogo">
+    <div class="caixa-modal">
+      <div class="topo-modal">
+        <img id="modalImagem" class="imagem-modal" src="" alt="" />
+        <div class="degrade-modal"></div>
+        <button type="button" class="fechar-modal" id="btnFecharModal">&times;</button>
+        <div class="titulo-modal-area">
+          <h2 class="titulo-modal" id="modalTitulo"></h2>
+        </div>
+      </div>
+
+      <div class="corpo-modal">
+        <div class="bloco-modal">
+          <div class="linha-info-modal">
+            <span class="etiqueta-categoria" id="modalCategoria"></span>
+            <span class="dev-modal">Dev: <strong id="modalDev"></strong></span>
+            <span class="ano-card" id="modalAno"></span>
+          </div>
+        </div>
+
+        <div class="bloco-modal">
+          <p class="texto-modal" id="modalDescricao"></p>
+        </div>
+
+        <div class="bloco-modal">
+          <div class="tags-modal" id="modalTags"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="javaScript/script.js"></script>
+</body>
+</html>
