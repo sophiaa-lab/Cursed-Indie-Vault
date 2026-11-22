@@ -169,6 +169,7 @@ button, input {
   font-size: 1.01rem;
   line-height: 1.62;
   color: #cbb9b5;
+  text-align: justify;
 }
 
 .banner-imagem {
@@ -263,7 +264,6 @@ button, input {
   color: #1b1111;
 }
 
-/* GRADE DE CARDS */
 .grade-jogos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
