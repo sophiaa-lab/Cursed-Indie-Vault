@@ -344,6 +344,7 @@ button, input {
   color: #cbb9b5;
   flex: 1;
   margin-bottom: 18px;
+  text-align: justify;
 }
 
 .tags-card {
