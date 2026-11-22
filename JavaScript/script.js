@@ -187,7 +187,7 @@ const listaJogos = [
     categoria: "Fantasia & Aventura",
     ano: "2016",
     dev: "Playdead",
-    imagem: "Imagens/INSIDE.svg",
+    imagem: "Imagens/Inside.svg",
     descricao: "Perseguido e sozinho, um rapaz encontra-se atraído para o centro de um projeto sombrio que envolve manipulação de corpos.",
     tags: ["Distopia", "Controle M...", "Obra-prima"],
     tagsCompletas: ["Distopia", "Controle Mental", "Obra-prima"]
