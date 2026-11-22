@@ -1,5 +1,4 @@
 const listaJogos = [
-  // ==================== 16 INICIAIS DA HOME ====================
   {
     ordemHome: 1,
     ordemCategoria: 1,
@@ -193,7 +192,7 @@ const listaJogos = [
     tagsCompletas: ["Distopia", "Controle Mental", "Obra-prima"]
   },
 
-  // ==================== POINT & CLICK RESTANTES (7) ====================
+  // ==================== POINT & CLICK ====================
   {
     ordemHome: 17,
     ordemCategoria: 5,
@@ -279,7 +278,7 @@ const listaJogos = [
     tagsCompletas: ["Pixel Art", "Experimental", "Obscuro"]
   },
 
-  // ==================== TERROR ANALÓGICO RESTANTES (7) ====================
+  // ==================== TERROR ANALÓGICO ====================
   {
     ordemHome: 24,
     ordemCategoria: 1,
@@ -365,7 +364,7 @@ const listaJogos = [
     tagsCompletas: ["Ansiedade", "Visual Novel", "Experiência"]
   },
 
-  // ==================== MASCOT HORROR RESTANTES (7) ====================
+  // ==================== MASCOT HORROR ====================
   {
     ordemHome: 31,
     ordemCategoria: 1,
@@ -451,7 +450,7 @@ const listaJogos = [
     tagsCompletas: ["Muppets", "Grama", "Survival Horror"]
   },
 
-  // ==================== FANTASIA & AVENTURA RESTANTES (7) ====================
+  // ==================== FANTASIA & AVENTURA ====================
   {
     ordemHome: 38,
     ordemCategoria: 1,
